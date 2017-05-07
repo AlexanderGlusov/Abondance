@@ -1,0 +1,92 @@
+.header {
+  border-bottom: 1px solid $gray;
+
+  &__content {
+    @extend %container;
+
+    @include media($tablet-screen-min) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    position: relative;
+  }
+
+  &__logo {
+    width: 102px;
+    height: 16px;
+    background: url('../img/header-logo.png');
+    background-size: contain;
+  }
+
+  &__toggle {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #000;
+
+    &:focus{
+      outline: none;
+    }
+
+    @include media($tablet-screen-min) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid $gray;
+
+    @include media($tablet-screen-min) {
+      position: static;
+      display: inline-block;
+      width: auto;
+      border: none;
+    }
+  }
+
+  &__nav-list {
+    margin: 7.5px 0;
+
+    li {
+
+      a {
+        display: block;
+        padding: 10px 25px;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      @include media($tablet-screen-min) {
+        display: inline-block;
+
+        a {
+          padding: 15px 30px;
+        }
+
+        &:first-child a {
+          padding-left: 0;
+        }
+
+        &:last-child a {
+          padding-right: 0;
+        }
+
+      }
+    }
+  }
+}

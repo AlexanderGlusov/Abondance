@@ -1,0 +1,45 @@
+///////////////////
+// Base typography
+///////////////////
+$root-font-size: 15px !default;
+$tablet-font-size: 12px !default;
+$mobile-font-size: 11px !default;
+
+$base-font-size: 1rem !default;
+$base-font-family: CeraGR, 'Source Sans Pro', sans-serif;
+$logo-font-family: 'Courgette', cursive;
+
+$base-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+///////////////////
+// Colors
+///////////////////
+$gray: #e5e5e5;
+$orange: #fca009;
+
+
+
+///////////////////
+// Media queries
+///////////////////
+$mobile-screen-sm-min: min-width 361px;
+$mobile-screen-sm-max: max-width 360px;
+$mobile-screen-md-min: min-width 501px;
+$mobile-screen-md-max: max-width 500px;
+$mobile-screen-lg-min: min-width 651px;
+$mobile-screen-lg-max: max-width 650px;
+$tablet-screen-min: min-width 768px;
+$tablet-screen-max: max-width 768px;
+$big-tablet-screen-min: min-width 961px;
+$big-tablet-screen-max: max-width 960px;
+$desktop-screen-xs-min: min-width 1024px;
+$desktop-screen-xs-max: max-width 1024px;
+$desktop-screen-sm-min: min-width 1100px;
+$desktop-screen-sm-max: max-width 1100px;
+$desktop-screen-md-max: max-width 1280px; 
+
+//////////////////////
+// Quantity component
+//////////////////////
+$quantity-size: 3.214rem;
+$quantity-small-size: 2.214rem;

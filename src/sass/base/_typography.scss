@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'CeraGR';
+  src: url('../fonts/CeraGR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CeraGR';
+  src: url('../fonts/CeraGR-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+* {
+  font-family: $base-font-family;
+  font-weight: 400;
+}
+
+html {
+  font-size: $root-font-size;
+  color: #424242;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  &:focus::-webkit-input-placeholder {color: #000; transition: 0.3s};
+  &:focus::-moz-placeholder          {color: #000; transition: 0.3s};
+  &:focus:-moz-placeholder           {color: #000; transition: 0.3s};
+  &:focus:-ms-input-placeholder      {color: #000; transition: 0.3s};
+}
