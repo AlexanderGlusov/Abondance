@@ -1,0 +1,55 @@
+.intro {
+  margin-top: 60px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+
+  .container {
+    @extend %vertical-paddings;
+    margin-bottom: 50px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    padding-top: 10px;
+  }
+
+  &__description {
+    margin-top: 40px;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: 0.1px;
+
+    @include media($iphone7) {
+      padding-right: 36px;
+    }
+  }
+
+  &__bottom-border {
+    z-index: -1;
+    height: 160px;
+    background: $light-orange;
+    border-radius: 50% 50%;
+    width: calc(100% + 280px);
+    position: absolute;
+    bottom: -115px;
+    left: -140px;
+  }
+
+  &__bottom-border-two {
+
+    position: absolute;
+    height: 160px;
+    background: $orange;
+    border-radius: 50% 50%;
+    width: calc(100% + 280px);
+    bottom: -130px;
+    left: -140px;
+  }
+
+}

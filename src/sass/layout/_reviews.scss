@@ -1,0 +1,106 @@
+.reviews {
+  background-color: $gray-lighter;
+
+  .container {
+    @extend %vertical-paddings;
+  }
+
+  &__short {
+    margin-bottom: 35px;
+    font-size: 35px;
+    line-height: 1.37;
+    letter-spacing: 0.1px;
+
+    @include media($iphone7) {
+      padding-right: 10px;
+    }
+  }
+
+  &__long {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.2px;
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__next-btn {
+    margin-top: 40px;
+    color: $gray-light;
+    font-size: 18px;
+  }
+}
+
+.author {
+
+  &__photo {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    background: url('../img/no-avatar.svg') no-repeat 50% 50%;
+    background-size: contain;
+  }
+
+  &__info {
+    font-size: 13px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__counter {
+    width: 40px;
+    height: 30px;
+  }
+}
+
+.owl-carousel {
+  touch-action: manipulation;
+}
+
+.owl-dots {
+  counter-reset: slides-num; /* Initialize counter. */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 15px;
+  color: $gray-light;
+
+  &:after {
+    content: counter(slides-num); /* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    padding-left: 5px;
+  }
+}
+
+.owl-dot {
+  display: inline-block;
+  counter-increment: slides-num; /* Increment counter */
+  margin-right: 5px;
+
+  span {
+    display: none;
+  }
+
+  &.active {
+
+    &:before {
+      content:  counter(slides-num) "/" ; /* Use the same counter to get current item. */
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}

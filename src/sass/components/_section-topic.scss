@@ -1,0 +1,21 @@
+.section-topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__title {
+    font-size: 13px;
+    letter-spacing: 0.17px;
+  }
+
+  &__line {
+    width: 78px;
+    height: 2px;
+    border: 1px solid $orange;
+
+    &.alt {
+      border-color: #fff;
+    }
+  }
+}

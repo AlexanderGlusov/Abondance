@@ -1,8 +1,13 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   border-bottom: 1px solid $gray;
+  background-color: #fff;
+  z-index: 2;
 
-  &__content {
-    @extend %container;
+  &__container {
+    @extend .container;
 
     @include media($tablet-screen-min) {
       display: flex;
@@ -21,7 +26,7 @@
   &__logo {
     width: 102px;
     height: 16px;
-    background: url('../img/header-logo.png');
+    background: url('../img/header-logo.svg');
     background-size: contain;
   }
 
@@ -47,6 +52,7 @@
     top: 75px;
     width: 100%;
     z-index: 2;
+    background-color: #fff;
     border-bottom: 1px solid $gray;
 
     @include media($tablet-screen-min) {

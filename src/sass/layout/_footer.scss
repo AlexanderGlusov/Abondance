@@ -1,0 +1,15 @@
+footer {
+  @extend .container;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $gray-light;
+  font-size: 13px;
+  letter-spacing: 0.17px;
+
+  .footer__author {
+    margin-bottom: 5px;
+  }
+
+}

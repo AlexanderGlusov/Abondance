@@ -1,0 +1,33 @@
+.contacts {
+
+  .container {
+    @extend %vertical-paddings;
+  }
+
+  &__content {
+    padding-top: 30px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 0.16px;
+    line-height: 20px;
+  }
+
+  &__description {
+    font-size: 30px;
+    letter-spacing: 0.1px;
+    line-height: 48px;
+
+    @include media($mobile-screen-sm-min) {
+      font-size: 35px;
+    }
+  }
+}

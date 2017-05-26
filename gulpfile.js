@@ -29,7 +29,7 @@ var path = {
         vendor: {
             js: [
                 './node_modules/jquery/dist/jquery.min.js',
-                //'./node_modules/owl.carousel/dist/owl.carousel.min.js',
+                './node_modules/owl.carousel/dist/owl.carousel.min.js',
                 // './node_modules/swiper/dist/js/swiper.jquery.min.js',
                 './node_modules/jquery-collapse/src/jquery.collapse.js'
                 // './node_modules/toastr/build/toastr.min.js',
