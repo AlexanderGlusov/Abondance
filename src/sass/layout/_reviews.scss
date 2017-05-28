@@ -76,9 +76,8 @@
   &:after {
     content: counter(slides-num); /* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */
     display: inline-block;
-    font-size: 20px;
-    vertical-align: middle;
-    padding-left: 5px;
+    font-size: 13px;
+    padding-left: 7px;
   }
 }
 
@@ -94,13 +93,13 @@
   &.active {
 
     &:before {
-      content:  counter(slides-num) "/" ; /* Use the same counter to get current item. */
+      content:  counter(slides-num) " /" ; /* Use the same counter to get current item. */
       display: inline-block;
-      vertical-align: middle;
-      font-size: 20px;
+
+      font-size: 13px;
       position: absolute;
-      left: 0;
-      top: 0;
+      right: 9px;
+      bottom: 0;
     }
   }
 }

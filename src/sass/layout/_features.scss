@@ -9,21 +9,14 @@
     margin-bottom: 20px;
   }
 
-  &__description {
+  &__main-description {
     line-height: 38px;
     color: #000000;
     font-size: 25px;
     letter-spacing: 0.07px;
-
-    div {
-      margin-top: 4px;
-      color: #ffffff;
-      font-size: 18px;
-      letter-spacing: 0.06px;
-    }
   }
 
-  &__latin {
+  &__add-description {
     position: relative;
     margin-top: 40px;
     padding-left: 50px;
@@ -35,9 +28,25 @@
       position: absolute;
       width: 30px;
       height: 30px;
-      background: url('../img/star.svg') no-repeat 50% 50%;
       left: 0;
       top: 8px;
     }
+
+    &--1::before {
+      background: url('../img/star.svg') no-repeat 50% 50%;
+    }
+
+    &--2::before {
+      background: url('../img/cloud.svg') no-repeat 50% 50%;
+    }
+
+    &--3::before {
+      background: url('../img/content.svg') no-repeat 50% 50%;
+    }
+  }
+
+  .feature-description-2,
+  .feature-description-3 {
+    display: none;
   }
 }
