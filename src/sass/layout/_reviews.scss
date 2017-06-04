@@ -1,8 +1,25 @@
 .reviews {
   background-color: $gray-lighter;
 
-  .container {
-    @extend %vertical-paddings;
+  @include media($desktop-screen-xs-min) {
+    padding-top: 108px;
+  }
+
+  .section-topic {
+    margin-bottom: 30px;
+
+    @include media($desktop-screen-xs-min) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    @include media($desktop-screen-xs-min) {
+      flex-direction: row;
+    }
   }
 
   &__short {
@@ -14,6 +31,11 @@
     @include media($iphone7) {
       padding-right: 10px;
     }
+
+    @include media($desktop-screen-xs-min) {
+      max-width: 310px;
+
+    }
   }
 
   &__long {
@@ -21,6 +43,12 @@
     font-size: 18px;
     line-height: 1.39;
     letter-spacing: 0.2px;
+
+    @include media($desktop-screen-xs-min) {
+      max-width: 400px;
+    }
+
+
   }
 
   &__author {
@@ -33,6 +61,14 @@
     margin-top: 40px;
     color: $gray-light;
     font-size: 18px;
+  }
+
+  .next-section-btn {
+    display: none;
+
+    @include media($desktop-screen-xs-min) {
+      display: flex;
+    }
   }
 }
 
@@ -102,4 +138,6 @@
       bottom: 0;
     }
   }
+
+
 }

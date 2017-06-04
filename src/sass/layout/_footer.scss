@@ -1,15 +1,34 @@
-footer {
-  @extend .container;
+.page-footer {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: $gray-light;
   font-size: 13px;
   letter-spacing: 0.17px;
+  margin-top: auto;
+
+
+  @include media($desktop-screen-xs-min) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .footer__author {
     margin-bottom: 5px;
+
+    @include media($desktop-screen-xs-min) {
+      order: 2;
+    }
+  }
+
+  .footer__copyright {
+    @include media($desktop-screen-xs-min) {
+      order: 1;
+    }
   }
 
 }

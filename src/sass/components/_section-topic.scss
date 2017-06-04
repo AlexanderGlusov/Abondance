@@ -2,11 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+
+  &__number {
+    display: none;
+
+    @include media($desktop-screen-xs-min) {
+      display: inline-flex;
+      color: #000;
+      font-size: 20px;
+      flex: 1;
+    }
+  }
 
   &__title {
     font-size: 13px;
     letter-spacing: 0.17px;
+
+    @include media($desktop-screen-xs-min) {
+      flex: 1.9;
+    }
   }
 
   &__line {

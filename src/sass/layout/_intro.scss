@@ -1,22 +1,38 @@
 .intro {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 50px;
   position: relative;
   max-width: 100%;
   overflow: hidden;
 
-  .container {
-    @extend %vertical-paddings;
-    margin-bottom: 50px;
+  @include media($desktop-screen-xs-min) {
+    padding-top: 108px;
   }
 
   &__main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+    @include media($iphone7) {
+      //padding-right: 36px;
+    }
+
+    @include media($desktop-screen-xs-min) {
+      flex-direction: row;
+      margin-bottom: 91px;
+    }
   }
 
   &__logo {
     padding-top: 10px;
+
+    @include media($desktop-screen-xs-min) {
+      margin-right: 120px;
+      margin-left: -30px;
+    }
   }
 
   &__description {
@@ -28,6 +44,16 @@
     @include media($iphone7) {
       padding-right: 36px;
     }
+
+    @include media($desktop-screen-xs-min) {
+      max-width: 617px;
+      margin-top: 45px;
+      font-size: 40px;
+    }
+  }
+
+  &__topic-number {
+    visibility: hidden;
   }
 
   &__bottom-border {
@@ -37,8 +63,12 @@
     border-radius: 50% 50%;
     width: calc(100% + 280px);
     position: absolute;
-    bottom: -115px;
+    bottom: -100px;
     left: -140px;
+
+    @include media($desktop-screen-xs-min) {
+      bottom: -35px;
+    }
   }
 
   &__bottom-border-two {
@@ -48,8 +78,12 @@
     background: $orange;
     border-radius: 50% 50%;
     width: calc(100% + 280px);
-    bottom: -130px;
+    bottom: -115px;
     left: -140px;
+
+    @include media($desktop-screen-xs-min) {
+      bottom: -50px;
+    }
   }
 
 }

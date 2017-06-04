@@ -1,11 +1,27 @@
 .brands {
 
-  .container {
-    @extend %vertical-paddings;
+  @include media($desktop-screen-xs-min) {
+    padding-top: 108px;
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @include media($desktop-screen-xs-min) {
+      margin-top: 40px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__card {
     margin-bottom: 60px;
+
+    @include media($desktop-screen-xs-min) {
+      max-width: 270px;
+    }
   }
 
   &__name {
@@ -33,8 +49,17 @@
     cursor: pointer;
   }
 
+  .next-section-btn {
+    display: none;
+
+    @include media($desktop-screen-xs-min) {
+      display: flex;
+    }
+  }
+
 }
 
 .hidden-element {
   display: none;
 }
+

@@ -30,6 +30,7 @@ var path = {
             js: [
                 './node_modules/jquery/dist/jquery.min.js',
                 './node_modules/owl.carousel/dist/owl.carousel.min.js',
+                './node_modules/fullpage.js/dist/jquery.fullpage.js',
                 // './node_modules/swiper/dist/js/swiper.jquery.min.js',
                 './node_modules/jquery-collapse/src/jquery.collapse.js'
                 // './node_modules/toastr/build/toastr.min.js',
@@ -37,7 +38,8 @@ var path = {
                 // './node_modules/tooltipster/dist/js/tooltipster.bundle.min.js'
             ],
             css: [
-                './node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
+                './node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
+                './node_modules/fullpage.js/dist/jquery.fullpage.css'
                 // './node_modules/owl.carousel/dist/assets/owl.theme.default.min.css'
                 /*'./node_modules/swiper/dist/css/swiper.min.css',
                 './node_modules/toastr/build/toastr.min.css',
@@ -66,7 +68,7 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    //tunnel: true,
+    tunnel: true,
     host: 'localhost',
     port: 9000,
     logPrefix: "Frontend_Devil"

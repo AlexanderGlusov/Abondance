@@ -18,3 +18,9 @@ h4 {
 img {
   max-width: 100%;
 }
+
+section {
+  @include media($desktop-screen-xs-min) {
+    height: 100vh;
+  }
+}
