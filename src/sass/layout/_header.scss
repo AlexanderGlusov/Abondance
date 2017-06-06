@@ -6,6 +6,11 @@
   background-color: #fff;
   z-index: 20;
 
+  @include media($desktop-screen-xs-min) {
+    border-color: transparent;
+    background: transparent;
+  }
+
   &__container {
     max-width: 1360px;
     margin: 0 auto;
@@ -66,6 +71,10 @@
       display: inline-block;
       width: auto;
       border: none;
+    }
+
+    @include media($desktop-screen-xs-min) {
+      background: transparent;
     }
   }
 

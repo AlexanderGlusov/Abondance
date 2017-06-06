@@ -4,7 +4,9 @@ $('#full-page').fullpage({
   anchors: ['intro', 'features', 'brands', 'reviews', 'contacts'],
   menu: '#menu',
   css3: true,
-  scrollingSpeed: 500
+  scrollingSpeed: 500,
+  navigation: true
+
 });
 
 //Отключаем при малой ширине экрана
