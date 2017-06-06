@@ -1,7 +1,9 @@
 .brands {
 
-  @include media($desktop-screen-xs-min) {
-    padding-top: 108px;
+  .container--pad {
+    @include media($desktop-screen-xs-min) {
+      margin-top: 110px;
+    }
   }
 
   &__wrapper {
@@ -10,7 +12,7 @@
     flex-direction: column;
 
     @include media($desktop-screen-xs-min) {
-      margin-top: 40px;
+      margin-top: 50px;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -25,14 +27,19 @@
   }
 
   &__name {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-size: 35px;
     letter-spacing: 0.1px;
     line-height: 48px;
   }
 
+  &__logo-container {
+    margin-bottom: 40px;
+    height: 74px;
+  }
+
   &__logo {
-    margin-bottom: 30px;
+    max-height: 74px;
   }
 
   &__description {

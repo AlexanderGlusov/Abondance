@@ -9,7 +9,11 @@
   color: $gray-light;
   font-size: 13px;
   letter-spacing: 0.17px;
-  margin-top: auto;
+  //margin-top: auto;
+
+  @include media($desktop-screen-xs-min) {
+    margin-bottom: 50px;
+  }
 
 
   @include media($desktop-screen-xs-min) {
