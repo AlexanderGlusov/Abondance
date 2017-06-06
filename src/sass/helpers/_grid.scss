@@ -10,7 +10,8 @@
     padding-bottom: 50px;
 
     @include media($desktop-screen-xs-min) {
-      padding-top: 80px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 

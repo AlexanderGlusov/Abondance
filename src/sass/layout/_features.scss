@@ -2,7 +2,7 @@
   background: $orange;
 
   @include media($desktop-screen-xs-min) {
-    padding-top: 108px;
+    //padding-top: 108px;
   }
 
   /*.container--pad {
@@ -10,6 +10,13 @@
       padding-bottom: 0;
     }
   }*/
+
+  .container--pad {
+    @include media($desktop-screen-xs-min) {
+      margin-top: 110px;
+      min-height: 550px;
+    }
+  }
 
   .section-topic__number{
     color: #fff;

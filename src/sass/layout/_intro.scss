@@ -6,7 +6,14 @@
   overflow: hidden;
 
   @include media($desktop-screen-xs-min) {
-    padding-top: 108px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .container--pad {
+    @include media($desktop-screen-xs-min) {
+      margin-bottom: 60px;
+    }
   }
 
   &__main {
