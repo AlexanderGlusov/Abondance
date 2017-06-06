@@ -1,4 +1,4 @@
-/*$('#full-page').fullpage({
+$('#full-page').fullpage({
   sectionSelector: '.fullpage-section',
   controlArrows: false,
   anchors: ['intro', 'features', 'brands', 'reviews', 'contacts'],
@@ -13,4 +13,4 @@ function windowSize(){
     $.fn.fullpage.destroy('all');
   }
 }
-$(window).on('load resize',windowSize);*/
+$(window).on('load resize',windowSize);
