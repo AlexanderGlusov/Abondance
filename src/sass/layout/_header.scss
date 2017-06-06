@@ -7,8 +7,8 @@
   z-index: 20;
 
   @include media($desktop-screen-xs-min) {
-    border-color: transparent;
     background: transparent;
+    border: none;
   }
 
   &__container {

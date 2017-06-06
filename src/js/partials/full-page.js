@@ -6,7 +6,6 @@ $('#full-page').fullpage({
   css3: true,
   scrollingSpeed: 500,
   navigation: true
-
 });
 
 //Отключаем при малой ширине экрана
