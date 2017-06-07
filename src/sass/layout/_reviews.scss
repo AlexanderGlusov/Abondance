@@ -32,6 +32,8 @@
     font-size: 35px;
     line-height: 1.37;
     letter-spacing: 0.1px;
+    position: relative;
+
 
     @include media($iphone7) {
       padding-right: 10px;
@@ -39,6 +41,27 @@
 
     @include media($desktop-screen-xs-min) {
       max-width: 320px;
+    }
+
+    .short__text {
+      z-index: 10;
+      background-color: $gray-lighter;
+    }
+
+    .short__round {
+      display: none;
+
+      @include media($desktop-screen-xs-min) {
+        display: block;
+        position: absolute;
+        height: 260px;
+        width: 260px;
+        border: 1px solid $orange;
+        border-radius: 50%;
+        z-index: -5;
+        top: 5px;
+        right: -50px;
+      }
     }
   }
 
@@ -119,6 +142,7 @@
   max-width: 851px;
 }
 
+//Owl slides counter
 .owl-dots {
   counter-reset: slides-num; /* Initialize counter. */
   position: absolute;
@@ -153,7 +177,6 @@
     &:before {
       content:  counter(slides-num) " /" ; /* Use the same counter to get current item. */
       display: inline-block;
-
       font-size: 13px;
       position: absolute;
       right: 9px;

@@ -12,13 +12,18 @@
   //margin-top: auto;
 
   @include media($desktop-screen-xs-min) {
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    justify-content: space-between;
   }
 
 
-  @include media($desktop-screen-xs-min) {
-    flex-direction: row;
-    justify-content: space-between;
+  @include media($desktop-screen-lg-min) {
+    bottom: 40px;
   }
 
   .footer__author {

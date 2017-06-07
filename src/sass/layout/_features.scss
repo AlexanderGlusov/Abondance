@@ -58,23 +58,7 @@
       max-width: 661px;
       font-size: 35px;
       line-height: 48px;
-      //position: relative;
       background-color: $orange;
-      //z-index: 10;
-
-
-      &:before {
-        //content: '';
-        //position: absolute;
-        //height: 260px;
-        //width: 260px;
-        //border: 1px solid #fff;
-        //border-radius: 50%;
-        //z-index: -5;
-        //top: -100px;
-        //right: -80px;
-
-      }
     }
   }
 
@@ -136,13 +120,16 @@
 
   //солюшн, чтобы при переключении не скакала кнопка
   .container {
-    //height: 100%;
     position: relative;
   }
 
   .next-section-btn {
     position: absolute;
-    top: 500px;
-    //bottom: 80px;
+    top: 450px;
+
+
+    @include media($desktop-screen-lg-min) {
+      top: 500px;
+    }
   }
 }

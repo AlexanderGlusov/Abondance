@@ -11,7 +11,7 @@ $('#full-page').fullpage({
 
 //Отключаем при малой ширине экрана
 function windowSize(){
-  if ($(window).width() <= '1024'){
+  if ($(window).width() < '1024'){
     $.fn.fullpage.destroy('all');
   }
 }
