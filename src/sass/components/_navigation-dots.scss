@@ -14,6 +14,13 @@ body #fp-nav ul li {
   margin-bottom: 10px;
 }
 
+body #fp-nav ul li a {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #000;
+}
+
 body #fp-nav ul li a span {
   background: $gray-dark;
   width: 8px;
@@ -28,7 +35,7 @@ body #fp-nav ul li:hover a.active span {
   margin: -10px 0 0 -10px;
   background: transparent;
   box-sizing: border-box;
-  border: 1px solid $orange;
+  border: 2px solid $orange;
 }
 
 body #fp-nav ul li a.active span {

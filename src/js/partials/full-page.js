@@ -4,7 +4,7 @@ $('#full-page').fullpage({
   anchors: ['intro', 'features', 'brands', 'reviews', 'contacts'],
   menu: '#menu',
   css3: true,
-  scrollingSpeed: 500,
+  scrollingSpeed: 1000,
   navigation: true
 });
 

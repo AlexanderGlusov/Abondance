@@ -27,9 +27,11 @@
     width: 78px;
     height: 2px;
     border: 1px solid $orange;
+    background: $orange;
 
     &.alt {
       border-color: #fff;
+      background: #fff;
     }
   }
 }
