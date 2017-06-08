@@ -92,11 +92,11 @@
 
 }
 
-.hidden-element {
+.second-page {
   display: none;
 
   @include media($desktop-screen-xs-min) {
-    display: block;
+    //display: block;
   }
 }
 

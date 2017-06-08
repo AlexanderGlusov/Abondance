@@ -4,7 +4,9 @@ $('.brands-toggle').click(function() {
 });
 
 
+
 $('.brands-toggle-desktop').click(function() {
   $('.first-page').hide();
-  $('.hidden-element').fadeIn('fast');
-})
+  $('.second-page').fadeIn('fast');
+
+});
