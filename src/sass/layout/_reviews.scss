@@ -12,6 +12,7 @@
 
     @include media($desktop-screen-xs-min) {
       margin-bottom: 70px;
+      opacity: 0;
     }
   }
 
@@ -24,6 +25,7 @@
       max-width: 851px;
       justify-content: space-between;
       flex-direction: row;
+      opacity: 0;
     }
   }
 
@@ -73,6 +75,7 @@
 
     @include media($desktop-screen-xs-min) {
       max-width: 400px;
+      padding-right: 20px;
     }
 
   }
@@ -93,6 +96,7 @@
       max-width: 57px;
       margin-top: 12px;
       text-align: right;
+      opacity: 0;
     }
   }
 
@@ -101,6 +105,7 @@
 
     @include media($desktop-screen-xs-min) {
       display: flex;
+      opacity: 0;
     }
   }
 }
@@ -141,6 +146,7 @@
 .owl-stage-outer {
   max-width: 851px;
 }
+
 
 //Owl slides counter
 .owl-dots {

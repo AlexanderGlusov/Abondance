@@ -16,11 +16,18 @@
     }
   }
 
+  .section-topic {
+    @include media($desktop-screen-xs-min) {
+      opacity: 0;
+    }
+  }
+
   &__content {
     margin-top: 60px;
 
     @include media($desktop-screen-xs-min) {
       margin-top: 70px;
+      opacity: 0;
     }
   }
 

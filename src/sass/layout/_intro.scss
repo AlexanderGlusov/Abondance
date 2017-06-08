@@ -16,6 +16,16 @@
     }
   }
 
+  .section-topic {
+    @include media($desktop-screen-xs-min) {
+      opacity: 0;
+    }
+  }
+
+  &__topic-number {
+    visibility: hidden;
+  }
+
   &__main {
     display: flex;
     flex-direction: column;
@@ -39,6 +49,7 @@
     @include media($desktop-screen-xs-min) {
       margin-right: 120px;
       margin-left: -30px;
+      opacity: 0;
     }
   }
 
@@ -56,11 +67,12 @@
       max-width: 617px;
       margin-top: 45px;
       font-size: 40px;
+      opacity: 0;
     }
   }
 
-  &__topic-number {
-    visibility: hidden;
+  .next-section-btn {
+    opacity: 0;
   }
 
   &__bottom-border {
