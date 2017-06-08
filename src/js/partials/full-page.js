@@ -34,27 +34,27 @@ if (doFullpage > 1023) {
         $('.intro .intro__description').delay(1000).animate({'opacity':'1'}, 1000);
         $('.intro .next-section-btn').delay(1500).animate({'opacity':'1'}, 1000);
       } else if (link == 'features') {
-        $('.features .section-topic').animate({'opacity':'1'}, 1000);
-        $('.features .features__main').delay(500).animate({'opacity':'1'}, 1000);
-        $('.features .features__add-description').delay(1000).animate({'opacity':'1'}, 1000);
-        $('.features .next-section-btn').delay(1500).animate({'opacity':'1'}, 1000);
+        $('.features .section-topic').animate({'opacity':'1'}, 800);
+        $('.features .features__main').delay(300).animate({'opacity':'1'}, 800);
+        $('.features .features__add-description').delay(600).animate({'opacity':'1'}, 800);
+        $('.features .next-section-btn').delay(900).animate({'opacity':'1'}, 800);
       } else if (link == 'brands') {
-        $('.brands .section-topic').animate({'opacity':'1'}, 1000);
-        $('.brands .brands__wrapper').delay(500).animate({'opacity':'1'}, 1000);
-        $('.brands .brands-toggle-desktop').delay(1000).animate({'opacity':'1'}, 1000);
-        $('.brands .next-section-btn').delay(1500).animate({'opacity':'1'}, 1000);
+        $('.brands .section-topic').animate({'opacity':'1'}, 800);
+        $('.brands .brands__wrapper').delay(500).animate({'opacity':'1'}, 800);
+        $('.brands .brands-toggle-desktop').delay(700).animate({'opacity':'1'}, 800);
+        $('.brands .next-section-btn').delay(1300).animate({'opacity':'1'}, 800);
       } else if (link == 'reviews') {
-        $('.reviews .section-topic').animate({'opacity':'1'}, 1000);
-        $('.reviews .reviews__block').delay(500).animate({'opacity':'1'}, 1000);
-        $('.reviews .reviews__next-btn').delay(1000).animate({'opacity':'1'}, 1000);
-        $('.reviews .next-section-btn').delay(1500).animate({'opacity':'1'}, 1000);
+        $('.reviews .section-topic').animate({'opacity':'1'}, 800);
+        $('.reviews .reviews__block').delay(500).animate({'opacity':'1'}, 800);
+        $('.reviews .reviews__next-btn').delay(700).animate({'opacity':'1'}, 800);
+        $('.reviews .next-section-btn').delay(1300).animate({'opacity':'1'}, 800);
       } else if (link == 'contacts') {
-        $('.contacts .section-topic').animate({'opacity':'1'}, 1000);
-        $('.contacts .contacts__content').delay(500).animate({'opacity':'1'}, 1000);
-        $('.contacts .page-footer').delay(1000).animate({'opacity':'1'}, 1000);
+        $('.contacts .section-topic').animate({'opacity':'1'}, 800);
+        $('.contacts .contacts__phone').delay(500).animate({'opacity':'1'}, 800);
+        $('.contacts .contacts__mail').delay(800).animate({'opacity':'1'}, 800);
+        $('.contacts .contacts__address').delay(900).animate({'opacity':'1'}, 800);
+        $('.contacts .page-footer').delay(1200).animate({'opacity':'1'}, 800);
       }
     }
   });
 }
-
-
