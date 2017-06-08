@@ -77,6 +77,7 @@
       padding-left: 10px;
       line-height: 1.33;
       letter-spacing: 0.2px;
+      opacity: 0;
     }
 
     &::before {
@@ -107,7 +108,9 @@
   }
 
   .feature-description-2,
-  .feature-description-3 {
+  .feature-description-3,
+  .feature-description-add-2,
+  .feature-description-add-3{
     display: none;
   }
 
@@ -124,6 +127,10 @@
       position: absolute;
       top: 400px;
       opacity: 0;
+
+      &:hover .next-section-btn__container {
+        border-color: #fff;
+      }
     }
 
     @include media($desktop-screen-lg-min) {

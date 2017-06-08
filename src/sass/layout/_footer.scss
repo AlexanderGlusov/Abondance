@@ -5,10 +5,11 @@
   padding: 0 25px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: $gray-light;
   font-size: 13px;
   letter-spacing: 0.17px;
+  padding-bottom: 20px;
   //margin-top: auto;
 
   @include media($desktop-screen-xs-min) {
@@ -20,6 +21,7 @@
     flex-direction: row;
     justify-content: space-between;
     opacity: 0;
+    padding-bottom: 0;
   }
 
 

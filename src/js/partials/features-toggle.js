@@ -1,12 +1,18 @@
 $('#next-description-2').click(function(){
-  $('.feature-description-2').fadeIn('fast');
+  $('.feature-description-2').fadeIn(1000);
+  $('.feature-description-add-2').delay(500).fadeIn(1000);
   $('.feature-description-1').hide();
+  $('.feature-description-add-1').hide();
 });
 $('#next-description-3').click(function(){
-  $('.feature-description-3').fadeIn('fast');
-  $('.feature-description-2').hide()
+  $('.feature-description-3').fadeIn(1000);
+  $('.feature-description-add-3').delay(500).fadeIn(1000);
+  $('.feature-description-2').hide();
+  $('.feature-description-add-2').hide();
 });
 $('#next-description-1').click(function(){
-  $('.feature-description-1').fadeIn('fast');
-  $('.feature-description-3').hide()
+  $('.feature-description-1').fadeIn(1000);
+  $('.feature-description-add-1').delay(500).fadeIn(1000);
+  $('.feature-description-3').hide();
+  $('.feature-description-add-3').hide();
 });

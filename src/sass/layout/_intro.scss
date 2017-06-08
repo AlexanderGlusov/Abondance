@@ -72,7 +72,9 @@
   }
 
   .next-section-btn {
-    opacity: 0;
+    @include media($desktop-screen-xs-min) {
+      opacity: 0;
+    }
   }
 
   &__bottom-border {

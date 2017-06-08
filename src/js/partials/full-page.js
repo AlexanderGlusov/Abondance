@@ -36,7 +36,8 @@ if (doFullpage > 1023) {
       } else if (link == 'features') {
         $('.features .section-topic').animate({'opacity':'1'}, 1000);
         $('.features .features__main').delay(500).animate({'opacity':'1'}, 1000);
-        $('.features .next-section-btn').delay(1000).animate({'opacity':'1'}, 1000);
+        $('.features .features__add-description').delay(1000).animate({'opacity':'1'}, 1000);
+        $('.features .next-section-btn').delay(1500).animate({'opacity':'1'}, 1000);
       } else if (link == 'brands') {
         $('.brands .section-topic').animate({'opacity':'1'}, 1000);
         $('.brands .brands__wrapper').delay(500).animate({'opacity':'1'}, 1000);
