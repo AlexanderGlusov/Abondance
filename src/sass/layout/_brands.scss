@@ -36,6 +36,25 @@
       max-width: 270px;
       margin-right: 50px;
     }
+
+    .outer-link {
+      @include media($desktop-screen-xs-min) {
+        opacity: 0;
+        transition: 0.7s;
+      }
+    }
+
+    &:hover .outer-link {
+      @include media($desktop-screen-xs-min) {
+        opacity: 1;
+      }
+    }
+
+    &:hover .brands__description {
+      @include media($desktop-screen-xs-min) {
+        color: #000;
+      }
+    }
   }
 
   &__name {
@@ -58,6 +77,11 @@
     margin-bottom: 30px;
     letter-spacing: 0.17px;
     line-height: 20px;
+
+    @include media($desktop-screen-xs-min) {
+      color: $gray-dark;
+      transition: 0.4s;
+    }
   }
 
   &-toggle {

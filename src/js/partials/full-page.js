@@ -16,7 +16,6 @@
 // }
 // $(window).on('load resize',windowSize);
 
-
 var doFullpage = document.documentElement.clientWidth;
 if (doFullpage > 1023) {
   $('#full-page').fullpage({
