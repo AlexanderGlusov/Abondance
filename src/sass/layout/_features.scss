@@ -1,5 +1,6 @@
 .features {
   background: $orange;
+  position: relative;
 
   .container--pad {
     @include media($desktop-screen-xs-min) {

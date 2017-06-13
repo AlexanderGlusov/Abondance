@@ -1,12 +1,6 @@
-//.fp-viewing-features #fp-nav ul li a span {
-//  background: $gray-dark;
-//  width: 8px;
-//  height: 8px;
-//}
-
 .fp-viewing-features #fp-nav ul li a.active span,
 .fp-viewing-features #fp-nav ul li:hover a.active span {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 
 body #fp-nav ul li {
@@ -38,6 +32,7 @@ body #fp-nav ul li:hover a.active span {
   border: 2px solid $orange;
 }
 
-body #fp-nav ul li a.active span {
-
+body .fp-controlArrow {
+  background: $orange;
 }
+

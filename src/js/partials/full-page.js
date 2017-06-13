@@ -20,12 +20,13 @@ var doFullpage = document.documentElement.clientWidth;
 if (doFullpage > 1023) {
   $('#full-page').fullpage({
     sectionSelector: '.fullpage-section',
-    controlArrows: false,
+    //controlArrows: true,
     anchors: ['intro', 'features', 'brands', 'reviews', 'contacts'],
     menu: '#menu',
     css3: true,
     scrollingSpeed: 1000,
     navigation: true,
+    loopHorizontal: true,
     afterLoad: function(link, index) {
       if (link == 'intro') {
         $('.intro .section-topic').animate({'opacity':'1'}, 1000);
