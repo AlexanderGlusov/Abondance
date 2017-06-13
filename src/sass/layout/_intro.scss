@@ -76,6 +76,10 @@
   .next-section-btn {
 
     @include media($desktop-screen-xs-min) {
+      bottom: 160px;
+    }
+
+    @include media($desktop-screen-lg-min) {
       bottom: 205px;
     }
   }

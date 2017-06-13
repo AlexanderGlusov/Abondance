@@ -6,13 +6,21 @@
     @include media($desktop-screen-xs-min) {
       display: flex;
       position: absolute;
-      bottom: 80px;
+      bottom: 60px;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
       max-width: 1200px;
       padding: 0 60px;
       opacity: 0;
+    }
+
+    @include media($desktop-screen-lg-min) {
+      bottom: 80px;
+    }
+
+    @include media($desktop-screen-xl-min) {
+      bottom: 140px;
     }
 
     &:hover .next-section-btn__container {

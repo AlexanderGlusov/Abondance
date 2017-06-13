@@ -8,11 +8,15 @@
     width: 100%;
     max-width: 1200px;
     position: absolute;
-    top: 190px;
+    top: 120px;
     left: 50%;
     transform: translateX(-50%);
     padding: 0 60px;
     opacity: 0;
+  }
+
+  @include media($desktop-screen-lg-min) {
+    top: 190px;
   }
 
   &__number {

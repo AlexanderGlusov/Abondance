@@ -15,9 +15,9 @@
   @include media($desktop-screen-xs-min) {
     margin-bottom: 0;
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     flex-direction: row;
     justify-content: space-between;
     opacity: 0;
@@ -26,7 +26,7 @@
 
 
   @include media($desktop-screen-lg-min) {
-    bottom: 40px;
+    bottom: 50px;
   }
 
   .footer__author {

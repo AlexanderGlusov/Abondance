@@ -5,9 +5,12 @@
 
   .container--pad {
     @include media($desktop-screen-xs-min) {
-      margin-top: 90px;
+      margin-top: 70px;
       position: relative;
+    }
 
+    @include media($desktop-screen-lg-min) {
+      margin-top: 90px;
     }
   }
 
