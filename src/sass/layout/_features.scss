@@ -4,8 +4,8 @@
 
   .container--pad {
     @include media($desktop-screen-xs-min) {
-      margin-top: 110px;
-      min-height: 550px;
+      //margin-top: 110px;
+      //min-height: 550px;
     }
   }
 
@@ -20,8 +20,9 @@
     flex-direction: column;
 
     @include media($desktop-screen-xs-min) {
-      margin-top: 55px;
-      margin-bottom: 155px;
+      //margin-top: 55px;
+      //margin-bottom: 155px;
+      margin-bottom: 0;
       flex-direction: row;
       justify-content: space-between;
       opacity: 0;
@@ -119,26 +120,6 @@
   .container {
     position: relative;
   }
-
-  .next-section-btn {
-    display: none;
-
-    @include media($desktop-screen-xs-min) {
-      display: flex;
-      position: absolute;
-      top: 400px;
-      opacity: 0;
-
-      &:hover .next-section-btn__container {
-        border-color: #fff;
-      }
-    }
-
-    @include media($desktop-screen-lg-min) {
-      top: 500px;
-    }
-  }
-
 
 }
 

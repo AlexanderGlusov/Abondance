@@ -7,17 +7,8 @@
 
   .container--pad {
     @include media($desktop-screen-xs-min) {
-      margin-top: 110px;
+     margin-top: 60px;
     }
-  }
-
-  .section-topic {
-    //margin-bottom: 30px;
-
-    //@include media($desktop-screen-xs-min) {
-    //  margin-bottom: 70px;
-    //  opacity: 0;
-    //}
   }
 
   &__block {

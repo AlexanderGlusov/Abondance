@@ -1,7 +1,23 @@
 .next-section-btn {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
+
+    @include media($desktop-screen-xs-min) {
+      display: flex;
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 60px;
+      opacity: 0;
+    }
+
+    &:hover .next-section-btn__container {
+      border-color: #fff;
+    }
 
   &:hover .next-section-btn__container {
     border-color: $orange;

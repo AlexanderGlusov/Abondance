@@ -5,9 +5,9 @@
   padding: 60px 25px 50px;
 
   @include media($desktop-screen-xs-min) {
-    position: absolute;
     width: 100%;
     max-width: 1200px;
+    position: absolute;
     top: 190px;
     left: 50%;
     transform: translateX(-50%);
@@ -41,7 +41,7 @@
     border: 1px solid $orange;
     background: $orange;
 
-    &.alt {
+    &--alt {
       border-color: #fff;
       background: #fff;
     }

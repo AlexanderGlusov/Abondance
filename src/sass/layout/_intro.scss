@@ -16,20 +16,6 @@
     }
   }
 
-  //.section-topic {
-  //  @include media($desktop-screen-xs-min) {
-  //    opacity: 0;
-  //
-  //    position: absolute;
-  //    width: 100%;
-  //    max-width: 1200px;
-  //    top: 190px;
-  //    left: 50%;
-  //    transform: translateX(-50%);
-  //    padding: 0 60px;
-  //  }
-  //}
-
   &__topic-number {
     visibility: hidden;
   }
@@ -47,7 +33,7 @@
 
     @include media($desktop-screen-xs-min) {
       flex-direction: row;
-      margin-bottom: 91px;
+      margin-bottom: 0;
     }
   }
 
@@ -79,20 +65,18 @@
     }
   }
 
-  .next-section-btn {
-    display: none;
-
-    @include media($desktop-screen-xs-min) {
-      display: flex;
-      opacity: 0;
-    }
-  }
-
   .next-section-btn--mob {
     display: flex;
 
     @include media($desktop-screen-xs-min) {
       display: none;
+    }
+  }
+
+  .next-section-btn {
+
+    @include media($desktop-screen-xs-min) {
+      bottom: 205px;
     }
   }
 

@@ -1,5 +1,5 @@
 $('.brands-toggle').click(function() {
-  $('.second-page').fadeIn('fast');
+  $('.hidden-brands').fadeIn('fast');
   $(this).fadeOut('fast');
 });
 
