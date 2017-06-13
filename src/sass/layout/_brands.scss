@@ -1,4 +1,7 @@
 .brands {
+  @include media($desktop-screen-xs-min) {
+    position: relative;
+  }
 
   .container--pad {
     @include media($desktop-screen-xs-min) {
@@ -8,14 +11,8 @@
     }
   }
 
-  .section-topic {
-    @include media($desktop-screen-xs-min) {
-      opacity: 0;
-    }
-  }
-
   &__wrapper {
-    margin-top: 30px;
+    //margin-top: 30px;
     display: flex;
     flex-direction: column;
 

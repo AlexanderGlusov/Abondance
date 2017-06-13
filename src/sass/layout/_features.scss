@@ -14,7 +14,7 @@
   }
 
   &__main {
-    margin-top: 60px;
+    //margin-top: 60px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -139,10 +139,6 @@
     }
   }
 
-  .section-topic {
-    @include media($desktop-screen-xs-min) {
-      opacity: 0;
-    }
-  }
+
 }
 

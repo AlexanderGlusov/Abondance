@@ -8,7 +8,7 @@
   }
 
   .container--pad {
-    padding-top: 90px;
+    //padding-top: 90px;
     width: 100%;
 
     @include media($desktop-screen-xs-min) {
@@ -16,14 +16,8 @@
     }
   }
 
-  .section-topic {
-    @include media($desktop-screen-xs-min) {
-      opacity: 0;
-    }
-  }
-
   &__content {
-    margin-top: 60px;
+    margin-top: 10px;
 
     @include media($desktop-screen-xs-min) {
       margin-top: 70px;

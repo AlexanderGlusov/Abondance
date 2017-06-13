@@ -16,11 +16,19 @@
     }
   }
 
-  .section-topic {
-    @include media($desktop-screen-xs-min) {
-      opacity: 0;
-    }
-  }
+  //.section-topic {
+  //  @include media($desktop-screen-xs-min) {
+  //    opacity: 0;
+  //
+  //    position: absolute;
+  //    width: 100%;
+  //    max-width: 1200px;
+  //    top: 190px;
+  //    left: 50%;
+  //    transform: translateX(-50%);
+  //    padding: 0 60px;
+  //  }
+  //}
 
   &__topic-number {
     visibility: hidden;
@@ -30,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
+    //margin-top: 30px;
     margin-bottom: 45px;
 
     @include media($iphone7) {
