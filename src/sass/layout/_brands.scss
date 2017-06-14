@@ -20,12 +20,16 @@
     flex-direction: column;
 
     @include media($desktop-screen-xs-min) {
-      max-width: 980px;
+      //max-width: 980px;
       //margin-top: 50px;
-      flex-direction: row;
+
+      //flex-direction: row;
+
       opacity: 0;
       //justify-content: space-between;
       //position: relative;
+
+      display: block;
     }
   }
 
@@ -33,9 +37,14 @@
     margin-bottom: 60px;
 
     @include media($desktop-screen-xs-min) {
-      max-width: 270px;
+      //max-width: 270px;
+
+      width: 265px;
+
       margin-right: 50px;
       margin-bottom: 0;
+
+      display: block;
     }
 
     .outer-link {
@@ -130,7 +139,29 @@
   display: none;
 
   @include media($desktop-screen-xs-min) {
-    //display: block;
+    display: inline-block;
   }
 }
 
+.slider {
+  @include media($desktop-screen-xs-min) {
+    width: 900px;
+    overflow: hidden;
+  }
+}
+
+.brands__wrapper {
+  @include media($desktop-screen-xs-min) {
+    width: 9999px;
+    height: 349px;
+    transition: left 500ms linear;
+    position: relative;
+  }
+}
+
+.brands__card {
+  @include media($desktop-screen-xs-min) {
+    float: left;
+    height: 349px;
+  }
+}
