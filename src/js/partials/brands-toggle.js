@@ -6,6 +6,5 @@ $('.brands-toggle').click(function() {
 $('.brands-toggle-desktop').click(function() {
   $('.first-page').hide();
   $('.second-page').fadeIn('fast');
-
 });
 
